@@ -1,0 +1,49 @@
+html,
+body {
+  font-family: "Netflix Sans Regular";
+  margin: 0;
+}
+
+.hero {
+  background-image: url("./images/hero.jpg");
+  background-size: cover;
+  padding: 50px;
+  height: 100vh;
+}
+
+.desc-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.desc-container img {
+  width: 100%;
+}
+
+.desc-container p {
+  font-size: 150%;
+  margin: 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.play-btn {
+  width: 40%;
+  padding: 15px 30px 15px 30px;
+  font-weight: 600;
+  font-size: 1.5em;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.info-btn {
+  background-color: rgba(74, 82, 87, 0.5);
+  color: white;
+}

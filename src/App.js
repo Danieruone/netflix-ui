@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className="hero">
+      <div className="desc-container">
+        <img src="/images/rm-logo.png" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Tienes un asiento de copiloto en las aventuras intergalácticas e
+          irreverentes de Rick, un científico loco sin pelos en la lengua, y
+          Morty, su nieto.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="btn-container">
+          <button className="play-btn">Reproducir</button>
+          <button className=" play-btn info-btn">Más Información</button>
+        </div>
+      </div>
     </div>
   );
 }
