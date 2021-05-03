@@ -1,11 +1,11 @@
 html,
 body {
-  font-family: "Netflix Sans Regular";
+  /* font-family: "Netflix Sans Regular"; */
   margin: 0;
 }
 
 .hero {
-  background-image: url("./images/hero.jpg");
+  /* background-image: url("./images/hero.jpg"); */
   background-size: cover;
   padding: 50px;
   height: 100vh;
