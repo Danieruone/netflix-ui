@@ -7,8 +7,8 @@ export const NavContainer = Styled.div`
     color: white;
     display: flex;
     justify-content: space-between;
-    background: linear-gradient(180deg, rgba(0,0,0,0.1516981792717087) 0%,
-        rgba(0,0,0,0.29735644257703087) 50%, rgba(0,0,0,0.1516981792717087) 100%);
+    background: linear-gradient(180deg, rgba(0,0,0,0.2) 0%,
+        rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
     padding: 0px 50px 0px 50px;
 `;
 
