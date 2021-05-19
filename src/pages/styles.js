@@ -6,5 +6,7 @@ export const Hero = Styled.div`
     background-image: url(${hero});
     background-size: cover;
     padding: 50px;
-    height: 100vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
 `;

@@ -1,10 +1,11 @@
 import React, { Fragment } from "react";
 // styles
 import { Hero } from "./styles";
-// images
-import logo from "../assets/images/rm-logo.png";
 // components
 import { NavBar } from "components/NavBar";
+import { VideoCarousel } from "components/VideoCarousel";
+// images
+import logo from "../assets/images/rm-logo.png";
 
 export const Main = () => {
   return (
@@ -24,6 +25,7 @@ export const Main = () => {
           </div>
         </div>
       </Hero>
+      <VideoCarousel />
     </Fragment>
   );
 };
