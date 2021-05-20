@@ -1,13 +1,13 @@
 import Styled from "styled-components";
 
 export const Container = Styled.div`
-    position: absolute;
+    position: fixed;
     width: 400px;
-    top: ${({ position }) => `${position.top + 150}px;`};
+    top: ${({ position }) => `${position.top - 50}px;`};
     left: ${({ position }) => `${position.left - 30}px;`};
     z-index: 2;
     cursor: pointer;
-    animation: slide-up .3s ease;
+    animation: slide-up 1s ease;
     & img{
         border-radius: 8px;
         width: 100%;
@@ -15,6 +15,7 @@ export const Container = Styled.div`
     }
     @keyframes slide-up {
         0%{
+            ${({ position }) => `${position.top}px;`};
             transform: scale(.9);
         }
         100% {
