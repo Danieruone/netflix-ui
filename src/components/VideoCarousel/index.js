@@ -1,8 +1,6 @@
 import React from "react";
 // styles
-import { Container } from "./styles";
-// npm
-import Carousel from "react-elastic-carousel";
+import { Container, CarouselContainer } from "./styles";
 // components
 import { VideoCard } from "components/VideoCard";
 
@@ -10,7 +8,7 @@ export const VideoCarousel = () => {
   return (
     <Container>
       <h1>Tendencias</h1>
-      <Carousel itemsToShow={5}>
+      <CarouselContainer>
         <VideoCard />
         <VideoCard />
         <VideoCard />
@@ -19,7 +17,7 @@ export const VideoCarousel = () => {
         <VideoCard />
         <VideoCard />
         <VideoCard />
-      </Carousel>
+      </CarouselContainer>
     </Container>
   );
 };

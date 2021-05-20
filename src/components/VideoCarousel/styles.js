@@ -13,3 +13,13 @@ export const Container = Styled.div`
         font-size: 28px;
     }
 `;
+
+export const CarouselContainer = Styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    overflow-x: scroll;
+    /* overflow: hidden; */
+    overflow-y: hidden;
+    padding: 50px 0 50px 0;
+`;
