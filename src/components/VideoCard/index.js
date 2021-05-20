@@ -1,6 +1,7 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useRef, useState } from "react";
 import Styled from "styled-components";
 import { VideoCardHover } from "components/VideoCardHover";
+import { Portal } from "Portal/Portal";
 
 export const Container = Styled.div`
   width: 300px;
@@ -15,18 +16,32 @@ export const Container = Styled.div`
 
 export const VideoCard = () => {
   const [isHovering, setIsHovering] = useState(false);
+  const card = useRef();
 
   const handleEnter = () => {
-    setIsHovering(!isHovering);
+    setIsHovering(true);
+  };
+
+  const handleLeave = () => {
+    setIsHovering(false);
   };
 
   return (
     <Fragment>
+      {isHovering && (
+        <Portal>
+          <VideoCardHover
+            position={card.current.getBoundingClientRect()}
+            handleEnter={handleEnter}
+            handleLeave={handleLeave}
+          />
+        </Portal>
+      )}
       <Container
+        ref={card}
         onMouseEnter={() => handleEnter()}
-        onMouseLeave={() => handleEnter()}
+        onMouseLeave={() => handleLeave()}
       >
-        {isHovering && <VideoCardHover />}
         <img
           src="https://occ-0-1595-3934.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZvbw253rjdf-lDxQgElGKjKa38YquVLfdyRu6L3XZnaunq4Inc5LXyH_KBfD6d7esLp09zMYWv_LvCFygghMWzB_LFiIxGr2tlSW5vMo97FUcZTe9BXBs7s_P-S.jpg?r=c25"
           alt="Serie"

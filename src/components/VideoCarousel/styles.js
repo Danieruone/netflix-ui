@@ -19,7 +19,7 @@ export const CarouselContainer = Styled.div`
     display: flex;
     justify-content: start;
     overflow-x: scroll;
-    /* overflow: hidden; */
+    overflow: hidden;
     overflow-y: hidden;
-    padding: 50px 0 50px 0;
+    padding: 10px 0 10px 0;
 `;
