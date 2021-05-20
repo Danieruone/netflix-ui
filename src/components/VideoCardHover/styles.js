@@ -1,13 +1,14 @@
 import Styled from "styled-components";
 
 export const Container = Styled.div`
-    position: fixed;
+    position: absolute;
     width: 400px;
-    top: ${({ position }) => `${position.top - 50}px;`};
+    top: ${({ position }) =>
+      `${position.top + document.scrollingElement.scrollTop - 50}px;`};
     left: ${({ position }) => `${position.left - 30}px;`};
     z-index: 2;
     cursor: pointer;
-    animation: slide-up 1s ease;
+    animation: slide-up .3s ease;
     & img{
         border-radius: 8px;
         width: 100%;

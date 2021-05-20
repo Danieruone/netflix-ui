@@ -25,7 +25,7 @@ export const VideoCard = () => {
   const handleLeave = () => {
     setIsHovering(false);
   };
-  console.log(card.current.getBoundingClientRect());
+
   return (
     <Fragment>
       {isHovering && (
