@@ -14,12 +14,11 @@ export const Container = Styled.div`
     }
 `;
 
-export const CarouselContainer = Styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: start;
-    overflow-x: scroll;
-    overflow: hidden;
-    overflow-y: hidden;
-    /* padding: 10px 0 10px 0; */
-`;
+// export const CarouselContainer = Styled.div`
+//     width: 100%;
+//     display: flex;
+//     justify-content: start;
+//     overflow-x: scroll;
+//     overflow: hidden;
+//     overflow-y: hidden;
+// `;

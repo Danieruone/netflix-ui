@@ -1,15 +1,19 @@
 import Styled from "styled-components";
 
 export const Container = Styled.div`
-    position: fixed;
+    position: absolute;
     width: 400px;
-    top: ${({ position }) => `${position.top - 50}px;`};
+    display: flex;
+    flex-direction: column;
+    top: ${({ position }) =>
+      `${position.top + document.scrollingElement.scrollTop - 50}px;`};
     left: ${({ position }) => `${position.left - 30}px;`};
     z-index: 2;
     cursor: pointer;
-    animation: slide-up 1s ease;
-    & img{
-        border-radius: 8px;
+    box-shadow: 1px 1px 20px 0px black;
+    animation: slide-up .3s ease;
+    & video{
+        border-radius: 8px 8px 0 0;
         width: 100%;
         margin: 0;
     }
@@ -26,10 +30,15 @@ export const Container = Styled.div`
 
 export const Detail = Styled.div`
     heigth: 100%;
-    width: 100%;
+    max-width: 400px;
     color: white;
-    background: black;
+    background: #141414;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0 0 8px 8px;
     & h1{
         margin: 0;
+        font-size: 20px;
+        font-weight: lighter;
     }
 `;
