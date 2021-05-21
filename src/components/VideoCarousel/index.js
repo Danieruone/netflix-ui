@@ -6,20 +6,17 @@ import "./carousel.css";
 import { VideoCard } from "components/VideoCard";
 // npm
 import Carousel from "react-elastic-carousel";
+// content
+import { content } from "content.js";
 
 export const VideoCarousel = ({ position }) => {
   return (
     <Container position={position}>
       <h1>Tendencias</h1>
       <Carousel itemsToShow={5} pagination={false}>
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
+        {content.map((video, idx) => {
+          return <VideoCard key={idx} {...video} />;
+        })}
       </Carousel>
     </Container>
   );
