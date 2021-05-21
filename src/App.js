@@ -1,12 +1,15 @@
+import React, { Fragment } from "react";
+// styles
+import { GlobalStyles } from "styles/GlobalStyles";
+// pages
 import { Main } from "./pages/Main";
-import { GlobalStyles } from "Styles/GlobalStyles";
 
 function App() {
   return (
-    <>
+    <Fragment>
       <GlobalStyles />
       <Main />
-    </>
+    </Fragment>
   );
 }
 

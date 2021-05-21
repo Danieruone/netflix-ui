@@ -1,7 +1,10 @@
 import React, { Fragment, useRef, useState } from "react";
+// styles
 import Styled from "styled-components";
+// components
 import { VideoCardHover } from "components/VideoCardHover";
-import { Portal } from "Portal/Portal";
+// rendering outside the father
+import { Portal } from "portal/Portal";
 
 export const Container = Styled.div`
   width: 300px;

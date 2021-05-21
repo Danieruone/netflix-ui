@@ -1,0 +1,13 @@
+.rec.rec-arrow {
+  border-radius: 0;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.2);
+}
+
+.rec.rec-arrow:hover {
+  background: #141414 !important;
+}
+
+.rec.rec-arrow:focus {
+  background: #141414 !important;
+}
