@@ -1,6 +1,8 @@
 import React, { useEffect, useRef } from "react";
 // styles
-import { Container, Detail } from "./styles";
+import { Container } from "./styles";
+// components
+import { VideoCardHoverDetail } from "components/VideoCardHoverDetail";
 // media
 import video from "assets/videos/netflix-intro.mp4";
 
@@ -15,7 +17,7 @@ export const VideoCardHover = ({
   useEffect(() => {
     const timer = setTimeout(() => {
       videoRef.current.play();
-    }, 1000);
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -29,9 +31,7 @@ export const VideoCardHover = ({
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <Detail>
-        <h1>Recomendado para ti</h1>
-      </Detail>
+      <VideoCardHoverDetail />
     </Container>
   );
 };
