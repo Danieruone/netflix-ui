@@ -1,9 +1,11 @@
 import Styled from "styled-components";
 
 export const NavContainer = Styled.div`
-    width: 100%;
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
+    width: auto;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -37,4 +39,11 @@ export const LeftContent = Styled.div`
       cursor: pointer;
       color: gray;
     }
+`;
+
+export const RightContent = Styled.div`
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 20px;
 `;

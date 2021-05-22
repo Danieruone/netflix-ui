@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
 // styles
-import { NavContainer, LeftContent } from "./styles";
+import { NavContainer, LeftContent, RightContent } from "./styles";
 // images
 import netflixLogo from "assets/images/netflix-logo.png";
+// icons
+import { BsFillBellFill } from "react-icons/bs";
 
 export const NavBar = () => {
   const [navState, setNavState] = useState(false);
@@ -30,6 +32,9 @@ export const NavBar = () => {
           <li>Mi lista</li>
         </ul>
       </LeftContent>
+      <RightContent>
+        <BsFillBellFill />
+      </RightContent>
     </NavContainer>
   );
 };
