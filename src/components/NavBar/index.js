@@ -5,6 +5,8 @@ import { NavContainer, LeftContent, RightContent } from "./styles";
 import netflixLogo from "assets/images/netflix-logo.png";
 // icons
 import { BsFillBellFill } from "react-icons/bs";
+// components
+import { NotificationPanel } from "components/NotificationPanel";
 
 export const NavBar = () => {
   const [navState, setNavState] = useState(false);
@@ -33,7 +35,10 @@ export const NavBar = () => {
         </ul>
       </LeftContent>
       <RightContent>
-        <BsFillBellFill />
+        <div styles={{ position: "relative" }}>
+          <BsFillBellFill />
+          <NotificationPanel />
+        </div>
       </RightContent>
     </NavContainer>
   );
