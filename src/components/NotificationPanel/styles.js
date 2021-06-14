@@ -2,8 +2,26 @@ import Styled from "styled-components";
 
 export const Container = Styled.div`
     position: absolute;
-    right: 0;
-    margin: 20px 30px 0 0; 
-    max-height: 500px;
+    right: 10px;
+    top: 40px;
+    margin: 20px 30px 0 0;  
+`;
+
+export const TopBar = Styled.div`
+    border: solid 1px white;
+    position: relative;
+    &:before{
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: 10px;
+        border-left:8px solid transparent;
+        border-right:8px solid transparent; 
+        border-bottom:10px solid white; 
+    }
+`;
+
+export const Content = Styled.div`
     overflow-y: scroll;
+    max-height: 600px;
 `;

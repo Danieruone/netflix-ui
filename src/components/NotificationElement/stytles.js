@@ -2,9 +2,9 @@ import Styled from "styled-components";
 
 export const Container = Styled.div`
     display: flex;
-    width: 400px;
+    width: 350px;
     align-items: center;
-    background-color: rgba(0,0,0, .8);
+    background-color: rgba(0,0,0, .9);
     padding: 15px;
     border-bottom: solid .5px gray;
     & img{

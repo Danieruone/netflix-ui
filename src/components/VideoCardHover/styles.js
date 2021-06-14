@@ -8,7 +8,7 @@ export const Container = Styled.div`
     top: ${({ position }) =>
       `${position.top + document.scrollingElement.scrollTop - 100}px;`};
     left: ${({ position }) => `${position.left - 30}px;`};
-    z-index: 2;
+    /* z-index: 2; */
     cursor: pointer;
     box-shadow: 1px 1px 20px 0px black;
     animation: slide-up .3s ease;
