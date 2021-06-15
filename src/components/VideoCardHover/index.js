@@ -6,12 +6,7 @@ import { VideoCardHoverDetail } from "components/VideoCardHoverDetail";
 // media
 import video from "assets/videos/netflix-intro.mp4";
 
-export const VideoCardHover = ({
-  position,
-  handleEnter,
-  handleLeave,
-  photo,
-}) => {
+export const VideoCardHover = ({ position, setIsHovering, photo }) => {
   const videoRef = useRef();
 
   useEffect(() => {
@@ -20,6 +15,14 @@ export const VideoCardHover = ({
     }, 500);
     return () => clearTimeout(timer);
   }, []);
+
+  const handleEnter = () => {
+    setIsHovering(true);
+  };
+
+  const handleLeave = () => {
+    setIsHovering(false);
+  };
 
   return (
     <Container
