@@ -5,6 +5,7 @@ export const Container = Styled.div`
     right: 10px;
     top: 40px;
     margin: 20px 30px 0 0;  
+    cursor: pointer;
 `;
 
 export const TopBar = Styled.div`

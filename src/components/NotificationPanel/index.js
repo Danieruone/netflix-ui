@@ -3,9 +3,12 @@ import { Container, TopBar, Content } from "./styles";
 
 import { NotificationElement } from "components/NotificationElement";
 
-export const NotificationPanel = () => {
+export const NotificationPanel = ({ handleCursor }) => {
   return (
-    <Container>
+    <Container
+      onMouseEnter={() => handleCursor(true)}
+      onMouseLeave={() => handleCursor(false)}
+    >
       <TopBar />
       <Content>
         <NotificationElement />
