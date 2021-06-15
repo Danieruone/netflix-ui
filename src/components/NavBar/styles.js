@@ -15,6 +15,7 @@ export const NavContainer = Styled.div`
         : "linear-gradient(180deg, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);"} ;
     padding: 0px 50px 0px 50px;
     transition: .5s ease background;
+    z-index: 2;
 `;
 
 export const LeftContent = Styled.div`

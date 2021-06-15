@@ -9,4 +9,7 @@ export const Hero = Styled.div`
     height: 90vh;
     display: flex;
     align-items: center;
+    & p{
+        font-size: 1.5rem;
+    }
 `;
