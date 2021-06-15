@@ -1,11 +1,15 @@
+@font-face {
+  font-family: "Netflix Sans Regular";
+  src: url("./assets/fonts/NetflixSansRegular.woff");
+}
+
 html,
 body {
-  /* font-family: "Netflix Sans Regular"; */
+  font-family: "Netflix Sans Regular";
   margin: 0;
 }
 
 .hero {
-  /* background-image: url("./images/hero.jpg"); */
   background-size: cover;
   padding: 50px;
   height: 100vh;
@@ -23,7 +27,6 @@ body {
 }
 
 .desc-container p {
-  font-size: 150%;
   margin: 0;
 }
 

@@ -2,7 +2,7 @@ import { createGlobalStyle } from "styled-components";
 import font from "assets/fonts/NetflixSansRegular.woff";
 
 export const GlobalStyles = createGlobalStyle`
-    @font-face {
+    /* @font-face {
         font-family: "Netflix Sans Regular";
         src: url(${font});
     }
@@ -11,5 +11,5 @@ export const GlobalStyles = createGlobalStyle`
     body {
         font-family: "Netflix Sans Regular";
         margin: 0;
-    }
+    } */
 `;
