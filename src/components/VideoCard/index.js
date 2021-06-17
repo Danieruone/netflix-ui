@@ -20,13 +20,17 @@ export const Container = Styled.div`
 export const VideoCard = ({ photo }) => {
   const [isHovering, setIsHovering] = useState(false);
   const card = useRef();
+  let timer = useRef();
 
   const handleEnter = () => {
-    setIsHovering(true);
+    timer.current = setTimeout(() => {
+      setIsHovering(true);
+    }, 300);
   };
 
   const handleLeave = () => {
     setIsHovering(false);
+    clearTimeout(timer.current);
   };
 
   return (
@@ -35,8 +39,7 @@ export const VideoCard = ({ photo }) => {
         <Portal>
           <VideoCardHover
             position={card.current.getBoundingClientRect()}
-            handleEnter={handleEnter}
-            handleLeave={handleLeave}
+            setIsHovering={setIsHovering}
             photo={photo}
           />
         </Portal>
