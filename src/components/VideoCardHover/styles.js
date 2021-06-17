@@ -18,7 +18,9 @@ export const Container = Styled.div`
     }
     @keyframes slide-up {
         0%{
-            ${({ position }) => `${position.top + 100}px;`};
+            /* top: ${({ position }) =>
+              `${position.top + document.scrollingElement.scrollTop - 40}px;`};
+            left: ${({ position }) => `${position.left - 35}px;`}; */
             transform: scale(.9);
         }
         100% {

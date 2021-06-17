@@ -29,8 +29,8 @@ export const VideoCard = ({ photo }) => {
   };
 
   const handleLeave = () => {
-    clearTimeout(timer.current);
     setIsHovering(false);
+    clearTimeout(timer.current);
   };
 
   return (

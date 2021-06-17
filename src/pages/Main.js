@@ -30,7 +30,9 @@ export const Main = () => {
         <VideoCarousel />
         <VideoCarousel />
       </div>
-      <div style={{ height: 500, backgroundColor: "#141414" }}></div>
+      <div style={{ height: 500, backgroundColor: "#141414" }}>
+        <p>Footer</p>
+      </div>
     </Fragment>
   );
 };
