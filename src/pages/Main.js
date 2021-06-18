@@ -4,6 +4,7 @@ import { Hero } from "./styles";
 // components
 import { NavBar } from "components/NavBar";
 import { VideoCarousel } from "components/VideoCarousel";
+import { Footer } from "components/Footer";
 // images
 import logo from "../assets/images/rm-logo.png";
 
@@ -30,9 +31,7 @@ export const Main = () => {
         <VideoCarousel />
         <VideoCarousel />
       </div>
-      <div style={{ height: 500, backgroundColor: "#141414" }}>
-        <p>Footer</p>
-      </div>
+      <Footer />
     </Fragment>
   );
 };
