@@ -16,6 +16,9 @@ export const NavContainer = Styled.div`
     padding: 0px 50px 0px 50px;
     transition: .5s ease background;
     z-index: 2;
+    @media (max-width: 800px) {
+      display: none;
+    }
 `;
 
 export const LeftContent = Styled.div`

@@ -11,9 +11,9 @@ export const Container = Styled.div`
   transition: .3s ease all;
   margin: 0px 23px 0px 23px;
   cursor: pointer;
-  position: relative;
   & img{
     border-radius: 8px;
+    width: 100%;
   }
 `;
 
