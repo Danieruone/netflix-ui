@@ -14,4 +14,17 @@ export const Container = Styled.div`
         background: rgb(20,20,20);
         background: linear-gradient(0deg, rgba(20,20,20,1) 0%, rgba(20,20,20,1) 60%, rgba(20,20,20,0) 100%);
     }
+    @media (max-width: 800px) {
+        & h1{
+            color: white;
+            padding: 20px 0px 20px 50px;
+            margin: 0;
+            font-size: 20px;
+        }
+        &:first-child{
+            position: static;
+            bottom: -250px;
+            background: rgb(20,20,20);
+        }
+    }
 `;

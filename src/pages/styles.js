@@ -9,7 +9,16 @@ export const Hero = Styled.div`
     height: 90vh;
     display: flex;
     align-items: center;
-    & p{
-        font-size: 1.5rem;
+    jutify-content: center;
+    @media (max-width: 800px) {
+        padding: 20px;
+    }
+`;
+
+export const CarouselContainer = Styled.div`
+    background: #141414; 
+    padding-top: 150px;
+    @media (max-width: 800px) {
+        padding-top: 0px;
     }
 `;

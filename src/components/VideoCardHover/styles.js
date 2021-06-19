@@ -7,7 +7,7 @@ export const Container = Styled.div`
     flex-direction: column;
     top: ${({ position }) =>
       `${position.top + document.scrollingElement.scrollTop - 100}px;`};
-    left: ${({ position }) => `${position.left - 30}px;`};
+    left: ${({ position }) => `${position.left - 50}px;`};
     cursor: pointer;
     box-shadow: 1px 1px 20px 0px black;
     animation: slide-up .5s ease;
@@ -18,13 +18,13 @@ export const Container = Styled.div`
     }
     @keyframes slide-up {
         0%{
-            /* top: ${({ position }) =>
-              `${position.top + document.scrollingElement.scrollTop - 40}px;`};
-            left: ${({ position }) => `${position.left - 35}px;`}; */
             transform: scale(.9);
         }
         100% {
             transform: scale(1);
         }
+    }
+    @media (max-width: 800px) {
+        width: 300px;
     }
 `;

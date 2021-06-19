@@ -9,17 +9,12 @@ body {
   margin: 0;
 }
 
-.hero {
-  background-size: cover;
-  padding: 50px;
-  height: 100vh;
-}
-
 .desc-container {
   color: white;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 600px;
+  font-size: 1.5rem;
 }
 
 .desc-container img {
@@ -36,7 +31,7 @@ body {
 }
 
 .play-btn {
-  width: 40%;
+  width: 300px;
   padding: 15px 30px 15px 30px;
   font-weight: 600;
   font-size: 1.5em;
@@ -44,9 +39,48 @@ body {
   border: none;
   border-radius: 5px;
   margin: 20px;
+  font-size: 1.2rem;
 }
 
 .info-btn {
   background-color: rgba(74, 82, 87, 0.5);
   color: white;
+}
+
+@media (max-width: 800px) {
+  .desc-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .desc-container p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 20px 0;
+  }
+
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .play-btn {
+    font-size: 0.8rem !important;
+    width: 200px;
+    padding: 15px 30px 15px 30px;
+    font-weight: 600;
+    font-size: 1em;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .info-btn {
+    background-color: rgba(74, 82, 87, 0.5);
+    color: white;
+  }
 }

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 // styles
-import { Hero } from "./styles";
+import { Hero, CarouselContainer } from "./styles";
 // components
 import { NavBar } from "components/NavBar";
 import { VideoCarousel } from "components/VideoCarousel";
@@ -26,11 +26,11 @@ export const Main = () => {
           </div>
         </div>
       </Hero>
-      <div style={{ background: "#141414", paddingTop: 150 }}>
+      <CarouselContainer>
         <VideoCarousel />
         <VideoCarousel />
         <VideoCarousel />
-      </div>
+      </CarouselContainer>
       <Footer />
     </Fragment>
   );
