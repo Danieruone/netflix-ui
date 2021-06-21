@@ -6,10 +6,8 @@ import "./carousel.css";
 import { VideoCard } from "components/VideoCard";
 // npm
 import Carousel from "react-elastic-carousel";
-// content
-import { content } from "content.js";
 
-export const VideoCarousel = ({ position }) => {
+export const VideoCarousel = ({ position, photos, topic }) => {
   let breakPoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2 },
@@ -20,9 +18,9 @@ export const VideoCarousel = ({ position }) => {
   ];
   return (
     <Container position={position}>
-      <h1>Tendencias</h1>
+      <h1>{topic}</h1>
       <Carousel breakPoints={breakPoints} pagination={false}>
-        {content.map((video, idx) => {
+        {photos.map((video, idx) => {
           return <VideoCard key={idx} {...video} />;
         })}
       </Carousel>

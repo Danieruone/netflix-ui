@@ -2,7 +2,7 @@ import React from "react";
 import { Container, TopBar, Content } from "./styles";
 
 import { NotificationElement } from "components/NotificationElement";
-import { content } from "content.js";
+import { notifications } from "content.js";
 
 export const NotificationPanel = ({ handleCursor }) => {
   return (
@@ -12,7 +12,7 @@ export const NotificationPanel = ({ handleCursor }) => {
     >
       <TopBar />
       <Content>
-        {content.map((element, idx) => {
+        {notifications.map((element, idx) => {
           return <NotificationElement key={idx} img={element.photo} />;
         })}
       </Content>

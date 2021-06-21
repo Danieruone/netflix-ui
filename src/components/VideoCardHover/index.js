@@ -12,7 +12,7 @@ export const VideoCardHover = ({ position, setIsHovering, photo }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
       videoRef.current.play();
-    }, 1000);
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 

@@ -7,6 +7,8 @@ import { VideoCarousel } from "components/VideoCarousel";
 import { Footer } from "components/Footer";
 // images
 import logo from "../assets/images/rm-logo.png";
+// content
+import { content } from "content.js";
 
 export const Main = () => {
   return (
@@ -27,9 +29,9 @@ export const Main = () => {
         </div>
       </Hero>
       <CarouselContainer>
-        <VideoCarousel />
-        <VideoCarousel />
-        <VideoCarousel />
+        {content.map((carousel, idx) => {
+          return <VideoCarousel key={idx} {...carousel} />;
+        })}
       </CarouselContainer>
       <Footer />
     </Fragment>
