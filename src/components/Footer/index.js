@@ -19,7 +19,7 @@ export const Footer = () => {
           <CgWebsite />
         </a>
         <a
-          href="www.linkedin.com/in/daniel-mendoza-developer"
+          href="https://www.linkedin.com/in/daniel-mendoza-developer"
           target="_blank"
           rel="noreferrer"
         >
