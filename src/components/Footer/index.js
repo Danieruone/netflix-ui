@@ -15,7 +15,7 @@ export const Footer = () => {
         >
           <FaGithub />
         </a>
-        <a href="https://darudev.dev" target="_blank" rel="noreferrer">
+        <a href="https://darudev.com" target="_blank" rel="noreferrer">
           <CgWebsite />
         </a>
         <a
